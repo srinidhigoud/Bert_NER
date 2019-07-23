@@ -10,10 +10,10 @@ from spacy.util import minibatch, compounding
 
 
 # New entity labels
-LABEL = ['health','oper-state','name','time','type']
+LABEL = ['health','oper','modf','aci_object']
 
 # Loading training data 
-with open ('Data/training_data', 'rb') as fp:
+with open ('Data/training_data_spacy_custom', 'rb') as fp:
     TRAIN_DATA = pickle.load(fp)
 
 @plac.annotations(
